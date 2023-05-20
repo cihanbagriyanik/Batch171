@@ -13,6 +13,13 @@ public class Q06 {
 
 	public static void main(String[] args) {
 
+		double mil = 100 ;
+
+		double saniye = 6000 ;
+
+		double fahreneit = 100 ;
+
+
 
 
 	}
