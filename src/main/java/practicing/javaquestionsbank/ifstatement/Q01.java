@@ -11,7 +11,19 @@ public class Q01 {
 
 	public static void main(String[] args) {
 
+		String month = "marT" ;
 
+		if (month.equalsIgnoreCase("aralik") || month.equalsIgnoreCase("ocak") || month.equalsIgnoreCase("subat")){
+			System.out.println("Kis");
+		} else if (month.equalsIgnoreCase("mart") || month.equalsIgnoreCase("nisan") || month.equalsIgnoreCase("mayis")) {
+			System.out.println("Ilkbahar");
+		} else if (month.equalsIgnoreCase("haziran") || month.equalsIgnoreCase("temmuz") || month.equalsIgnoreCase("agustos")) {
+			System.out.println("Yaz");
+		} else if (month.equalsIgnoreCase("eylul") || month.equalsIgnoreCase("ekim") || month.equalsIgnoreCase("kasim")) {
+			System.out.println("Sonbahar");
+		} else {
+			System.out.println("Gecersiz bir vere girdiniz lutfen kontrol ediniz...");
+		}
 
 	}
 }
