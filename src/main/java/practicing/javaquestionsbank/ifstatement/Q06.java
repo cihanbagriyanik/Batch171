@@ -1,5 +1,8 @@
 package practicing.javaquestionsbank.ifstatement;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Q06 {
 
 	//M!l! km'ye, san!yey! saate, fahrenhaytı sant!grata çev!ren b!r dönüstürücü olusturmak !ç!n
@@ -13,13 +16,29 @@ public class Q06 {
 
 	public static void main(String[] args) {
 
-		double mil = 100 ;
+		Scanner input = new Scanner(System.in) ;
 
-		double saniye = 6000 ;
+		System.out.println("Lutfen Km ye donusturmek istediginiz Mil degeri giriniz...");
+		double mil  = input.nextDouble() ;
 
-		double fahreneit = 100 ;
+		System.out.println("Lutfen Celciusa donusturmek istediginiz Fahrenheit degeri giriniz...");
+		double fahrenheit = input.nextDouble() ;
+
+		System.out.println("Lutfen Hours a donusturmek istediginiz Second degeri giriniz...");
+		double second = input.nextDouble() ;
+
+		String operator = "1";
 
 
+		if (operator.equals("1")) {
+			System.out.println(mil + " Miles = " + (mil*1.60) + " Km");
+		} else if (operator.equals("2")) {
+			System.out.println(fahrenheit + " Fahrenheit = " + (fahrenheit-32)*(5/9) + " Celsius");
+		} else if (operator.equals("3")) {
+			System.out.println(second + " Second = " + (second/60/60) + " Hours");
+		} else {
+			System.out.println("Gecersiy bir deger girdiniz...");
+		}
 
 
 	}
