@@ -1,6 +1,5 @@
 package practicing.javaquestionsbank.ifstatement;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Q06 {
