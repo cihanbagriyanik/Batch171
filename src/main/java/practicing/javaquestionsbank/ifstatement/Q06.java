@@ -29,14 +29,14 @@ public class Q06 {
 		String operator = "1";
 
 
-		if (operator.equals("1")) {
+		if (operator.equals("1")){
 			System.out.println(mil + " Miles = " + (mil*1.60) + " Km");
 		} else if (operator.equals("2")) {
 			System.out.println(fahrenheit + " Fahrenheit = " + (fahrenheit-32)*(5/9) + " Celsius");
 		} else if (operator.equals("3")) {
 			System.out.println(second + " Second = " + (second/60/60) + " Hours");
 		} else {
-			System.out.println("Gecersiy bir deger girdiniz...");
+			System.out.println("Gecersiz bir deger girdiniz...");
 		}
 
 

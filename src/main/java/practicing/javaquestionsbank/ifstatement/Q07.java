@@ -16,15 +16,30 @@ public class Q07 {
 
 	public static void main(String[] args) {
 
-		String name = "Cihan Bagriyanik" ;
+		String name = "cihanBagriyanik?" ;
 
 		String isimIlkHarf = name.substring(0,1) ;
 
-		int bosluk = name.trim().indexOf(" ");
+		Integer bosluk = name.trim().indexOf(" ");
 
 		String soyisimIlkHarf = name.substring(bosluk+1,bosluk+2) ;
 
+		Boolean adinIlkHarfiBuyukMu = (isimIlkHarf.charAt(0)>='A' && isimIlkHarf.charAt(0)<='Z');
+		Boolean soyadinIlkHarfiBuyukMu = (soyisimIlkHarf.charAt(0)>='A' && soyisimIlkHarf.charAt(0)<='Z');
 
+		if(bosluk ==-1){
+			System.out.println("Ad veya soyadi eksik ");
+		} else if(!adinIlkHarfiBuyukMu || !soyadinIlkHarfiBuyukMu){
+			System.out.println("Bas harflerinde hata");
+		} else if(name.equals(name.toUpperCase())){
+			System.out.println("Format hatasi");
+		} else if(name.replaceAll("\\s","").length()==0){
+			System.out.println("Isim girilmedi ");
+		} else if (name.replaceAll("\\s","").replaceAll("[A-Za-z]","").length()>0){
+			System.out.println("Gecersiz Isim");
+		} else {
+			System.out.println("Tebrikler dogru sekilde verinizi girdiniz...");
+		}
 
 
 
