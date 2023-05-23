@@ -43,7 +43,7 @@ public class Ternary01 {
 		System.out.println(i>0 ? "pozitif" : "negatif");
 
 
-		// Ornek 4 : Kullanicidan iki sayi alini, Buyuk olmayan kucuk veya esit olan sayiyi yazdiriniz.
+		//Ornek 4: Kullanicidan iki sayi aliniz "buyuk olmayan" (kucuk veya esit olan) sayiyi yazdiriniz
 
 		Scanner input = new Scanner(System.in);
 		System.out.println("Iki sayi giriniz...");
