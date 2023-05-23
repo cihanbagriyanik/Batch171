@@ -19,19 +19,21 @@ public class Answer02 {
 		System.out.println("Lutfen bir kelime giriniz...");
 		String name = input.next();
 
-
-		String first = String.valueOf(name.charAt(0));
-		String last = String.valueOf(name.charAt(name.length()-1));
-		System.out.println("Girilen kelimenin ilk ve son harfi : " + first + last );
-		String xx = String.valueOf(first + last);
-
-
 		System.out.println("Lutfen 1 ile 10 arasinda bir sayi giriniz...");
 		int num = input.nextInt();
-		System.out.println(xx.repeat(num));
 
-
+		ilkVeSondHarfTekrar(name, num);
 
 	}
 
+	public static void  ilkVeSondHarfTekrar(String name, int num){
+
+		String first = String.valueOf(name.charAt(0));
+		String last = String.valueOf(name.charAt(name.length()-1));
+
+		System.out.println("Girilen kelimenin ilk ve son harfi : " + first + last );
+		String xx = String.valueOf(first + last);
+
+		System.out.println(xx.repeat(num));
+	}
 }
